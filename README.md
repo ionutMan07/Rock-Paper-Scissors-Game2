@@ -1,6 +1,5 @@
 # Rock-Paper-Scissors-Game2
 
- /*
     ## Homework 1
     1. Show the total score on each round
     2. Implement a play again functionality (reset the input, scores, hide elements)
@@ -10,4 +9,4 @@
     ## Homework 2
     
     1. Create a calculator page, keep it simple please :).
-*/
+
