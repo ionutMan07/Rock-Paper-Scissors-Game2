@@ -10,9 +10,9 @@ var getRandomInt = function (max) {
   
     var user = document.querySelector("#user-choice").value;
 
-    if(user.indexOf('Rock', 'Paper', 'Scissors') ===-1){
-      return alert ('Check your spelling, pleasee!');
-    }; // checks if the user input is correct
+    // if(user.indexOf('Rock', 'Paper', 'Scissors') ===-1){
+    //   return alert ('Check your spelling, pleasee!');
+    // }; // checks if the user input is correct
 
     var result = "";
     
