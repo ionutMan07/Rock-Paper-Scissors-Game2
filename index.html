@@ -11,11 +11,14 @@
       Rock paper scissor game 🚀
     </h1>
 
+    <form id="myForm">
     <label
       >Type your choice:
       <input id="user-choice"  placeholder="Scissors, Rock, Paper" type ="text" required
     /></label>
-    <hr />
+    <hr />  
+  </form>
+
     <div style="display: none;">
       Computer chose: <span id="computer-choice"></span>
       <p id="result"></p>
@@ -25,7 +28,10 @@
       </p>
     </div>
     <button id="play">Play</button>
-    <button id = "reset">Reset</button>
+    <input  id = 'reset' type="button" value="Reset">
+    
+ 
+    <!-- <button id = "reset">Reset</button> -->
     <script src="src/game.js"></script>
   </body>
 </html>
