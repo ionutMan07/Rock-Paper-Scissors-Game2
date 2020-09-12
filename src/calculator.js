@@ -1,6 +1,6 @@
 var calculate = function (event) {
-  var firstNumber = parseInt(document.querySelector("#firstNumber").value);
-  var secondNumber = parseInt(document.querySelector("#secondNumber").value);
+  var firstNumber = Number(document.querySelector("#firstNumber").value);
+  var secondNumber = parseFloat(document.querySelector("#secondNumber").value);
   var operation = document.querySelector("#operation").value;
   var rezultat;
 
@@ -13,7 +13,7 @@ var calculate = function (event) {
   } else if (operation === "divide") {
     rezultat = firstNumber * secondNumber;
   }
-  document.querySelector("#rezultat").innerText = rezultat.toFixed(2);
+  document.querySelector("#rezultat").innerText = rezultat;
 };
 
 var reset = function (event) {
