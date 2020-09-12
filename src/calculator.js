@@ -5,7 +5,8 @@ var calculate = function (event){
 var firstNumber = parseInt(document.querySelector('#firstNumber').value);
 var secondNumber = parseInt(document.querySelector('#secondNumber').value);
 var operation = document.querySelector('#operation').value;
-var rezultat ;
+var rezultat;
+
 
   if(operation === "add"){
    rezultat = firstNumber + secondNumber;
@@ -20,16 +21,19 @@ var rezultat ;
     rezultat = firstNumber * secondNumber;
   }
   document.querySelector("#rezultat").innerText = rezultat;
-};
+}
 
 var reset = function(event){
+    var noValue = ' ';
     document.getElementById("myForm2").reset();
+    document.querySelector("#rezultat").innerText = noValue;
+
 }
 
 var playBtn = document.getElementById("Calculate");
 playBtn.addEventListener("click", calculate);
 
 
-var resetBtn = document.getElementById("resetBtn");
-playBtn.addEventListener("click", reset);
+ var resetBtn = document.getElementById("resetBtn");
+ resetBtn.addEventListener("click", reset);
 
