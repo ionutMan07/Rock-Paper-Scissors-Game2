@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css">
     <title>Rock Paper Scissors Game</title>
   </head>
   <body>
     <h1>
-      Rock paper scissor game 🚀
+      Rock paper scissor game <span id = 'rocket'>🚀</span>
     </h1>
 
     <form id="myForm">
@@ -28,10 +29,35 @@
       </p>
     </div>
     <button id="play">Play</button>
-    <input  id = 'reset' type="button" value="Reset">
-    
- 
-    <!-- <button id = "reset">Reset</button> -->
+    <button  id = 'reset' value="Reset">Reset</button>
+    <hr>
+    <br>
+    <!-- ###########   Calculator  ############-->
+    <form id = 'myForm2'>
+    <label>
+      Add your numbers bellow :<br><br>
+      <input id="firstNumber" type="text">
+    </label>
+    <label >
+      <select  id="operation">
+        <option id="null" value="null" selected ></option>
+        <option id="add" value="add">Add</option>
+        <option id="sub" value="sub">Minus</option>
+        <option id="multiply" value="multiply">Multiply</option>
+        <option id="divide" value="divide">Divide</option>
+      </select>
+    <label >
+    <input id="secondNumber" type="text">
+    </label><br>
+   
+    </label><br>
+    </form>
+    <button id="Calculate">Calculate</button>
+    <button id="resetBtn">Reset</button>
+    <p>
+      The result is = <span id="rezultat"></span>
+    </p>
     <script src="src/game.js"></script>
+    <script src="/src/calculator.js"></script>
   </body>
 </html>
