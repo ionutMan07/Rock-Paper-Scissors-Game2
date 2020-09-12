@@ -33,29 +33,25 @@
     <hr>
     <br>
     <!-- ###########   Calculator  ############-->
+    <h1> Calculator 🖩</h1>
     <form id = 'myForm2'>
-    <label>
+    <label id= 'message'>
       Add your numbers bellow :<br><br>
-      <input id="firstNumber" type="text">
+      <input id="firstNumber" type="number" required>
     </label>
-    <label >
       <select  id="operation">
         <option id="add" value="add">Add</option>
         <option id="sub" value="sub">Minus</option>
         <option id="multiply" value="multiply">Multiply</option>
         <option id="divide" value="divide">Divide</option>
       </select>
-    <label >
-    <input id="secondNumber" type="text">
-    </label><br>
-   
-    </label><br>
+    <input id="secondNumber" type="number" required> = <span id="rezultat" class= 'rezultat'></span>
+    <br><br>
     </form>
+
     <button id="Calculate">Calculate</button>
     <button id="resetBtn">Reset</button>
-    <p>
-      The result is = <span id="rezultat"></span>
-    </p>
+
     <script src="src/game.js"></script>
     <script src="src/calculator.js"></script>
   </body>
