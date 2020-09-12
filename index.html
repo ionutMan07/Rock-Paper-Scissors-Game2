@@ -4,49 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Rock Paper Scissors Game</title>
   </head>
   <body>
-    <h1>
-      Rock paper scissor game <span id = 'rocket'>🚀</span>
-    </h1>
+    <!-- ###########   Rock, Paper, Scissors  ############-->
+
+    <h1>Rock paper scissor game <span id="rocket">🚀</span></h1>
 
     <form id="myForm">
-    <label
-      >Type your choice:
-      <input id="user-choice"  placeholder="Scissors, Rock, Paper" type ="text" required
-    /></label>
-    <hr />  
-  </form>
+      <label
+        >Type your choice:
+        <input
+          id="user-choice"
+          placeholder="Scissors, Rock, Paper"
+          type="text"
+          required
+      /></label>
+      <hr />
+    </form>
 
     <div style="display: none;">
       Computer chose: <span id="computer-choice"></span>
       <p id="result"></p>
       <p>
-        Score 🏆: Player: <span id="player-score"></span
-        > Computer: <span id="computer-score">dasda</span>
+        Score 🏆: Player: <span id="player-score"></span> Computer:
+        <span id="computer-score">dasda</span>
       </p>
     </div>
     <button id="play">Play</button>
-    <button  id = 'reset' value="Reset">Reset</button>
-    <hr>
-    <br>
+    <button id="reset" value="Reset">Reset</button>
+    <hr />
+    <br />
+
     <!-- ###########   Calculator  ############-->
-    <h1> Calculator 🖩</h1>
-    <form id = 'myForm2'>
-    <label id= 'message'>
-      Add your numbers bellow :<br><br>
-      <input id="firstNumber" type="number" required>
-    </label>
-      <select  id="operation">
+
+    <h1>Calculator 🖩</h1>
+    <form id="myForm2">
+      <label id="message">
+        Add your numbers bellow :<br /><br />
+        <input id="firstNumber" type="number" required />
+      </label>
+      <select id="operation">
         <option id="add" value="add">Add</option>
         <option id="sub" value="sub">Minus</option>
         <option id="multiply" value="multiply">Multiply</option>
         <option id="divide" value="divide">Divide</option>
       </select>
-    <input id="secondNumber" type="number" required> = <span id="rezultat" class= 'rezultat'></span>
-    <br><br>
+      <input id="secondNumber" type="number" required /> =
+      <span id="rezultat" class="rezultat"></span> <br /><br />
     </form>
 
     <button id="Calculate">Calculate</button>
