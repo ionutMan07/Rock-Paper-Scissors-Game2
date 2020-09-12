@@ -1,5 +1,4 @@
 
-
 var calculate = function (event){
 
 var firstNumber = parseInt(document.querySelector('#firstNumber').value);
