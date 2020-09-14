@@ -11,7 +11,7 @@ var calculate = function (event) {
   } else if (operation === "multiply") {
     rezultat = firstNumber * secondNumber;
   } else if (operation === "divide") {
-    rezultat = firstNumber * secondNumber;
+    rezultat = firstNumber / secondNumber;
   }
   document.querySelector("#rezultat").innerText = rezultat;
 };
